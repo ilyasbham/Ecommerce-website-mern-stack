@@ -1,0 +1,28 @@
+Middleware error
+Controller → “Do work. If fail, throw error.”
+
+
+//utils->ErrorHandler
+ErrorHandler class → “Make errors smart (with message + code).”
+
+Error middleware → “Catch all errors and reply nicely.”
+
+app.js → “Make sure catcher is standing at the end of the game.”
+
+
+for postman
+admin -> ilyasbham1@gmail.com
+password -> Aa12345678.
+{
+  "name": "Wireless Bluetooth Headphones",
+  "description": "High-quality over-ear wireless headphones with noise cancellation and long battery life.",
+  "price": 129.99,
+  "ratings": 4.5,
+  "images": [
+    {
+      "public_id": "sample",
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=464"
+    }
+  ],
+  "category": "laptop"
+}
