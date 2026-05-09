@@ -14,7 +14,7 @@ const cors = require("cors");
 // Allow requests from frontend
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://ecommerce-website-frontend-xqds.onrender.com"], // your deployed frontend URL
+    origin: ["http://localhost:5173","https://ecommerce-website-mern-stack-frontend-94j1e01ho.vercel.app/"], // your deployed frontend URL
     credentials: true,
   })
 );
