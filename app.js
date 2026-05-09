@@ -12,15 +12,17 @@ const cors = require("cors");
 
 
 // Allow requests from frontend
+// backend/app.js
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      'https://ecommerce-website-mern-sta-git-f3288d-ilyasbham1-7775s-projects.vercel.app'
+      "https://ecommerce-website-mern-stack-fronte.vercel.app", // Add this one!
+      "https://ecommerce-website-mern-sta-git-f3288d-ilyasbham1-7775s-projects.vercel.app"
     ],
     credentials: true,
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
 
