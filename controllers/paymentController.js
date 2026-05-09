@@ -15,6 +15,12 @@ exports.processPayment = catchAsyncErrors(async (req, res, next) => {
     .json({ success: true, client_secret: myPayment.client_secret });
 });
 
-exports.sendStripeApiKey = catchAsyncErrors(async (req, res, next) => {
-  res.status(200).json({ stripeApiKey: process.env.STRIPE_API_KEY });
-});
+exports.sendStripeApiKey = (req, res) => {
+  res.status(200).json({
+    stripeApiKey: process.env.STRIPE_API_KEY
+  });
+};
+
+// exports.sendStripeApiKey = catchAsyncErrors(async (req, res, next) => {
+//   res.status(200).json({ stripeApiKey: process.env.STRIPE_API_KEY });
+// });
