@@ -14,7 +14,10 @@ const cors = require("cors");
 // Allow requests from frontend
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://ecommerce-website-mern-stack-frontend-94j1e01ho.vercel.app/"], // your deployed frontend URL
+    origin: [
+      "http://localhost:5173",
+      "https://ecommerce-website-mern-stack-frontend-94j1e01ho.vercel.app"
+    ],
     credentials: true,
   })
 );
@@ -61,11 +64,11 @@ app.use('/api/v1',user);
 app.use('/api/v1',order);
 app.use('/api/v1',payment);
 
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
+// app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
-});
+// app.get(/.*/, (req, res) => {
+//   res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+// });
 
 
 //middleware for error 
