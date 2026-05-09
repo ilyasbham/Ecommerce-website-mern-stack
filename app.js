@@ -16,11 +16,17 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://ecommerce-website-mern-stack-frontend-94j1e01ho.vercel.app"
+      'https://ecommerce-website-mern-sta-git-f3288d-ilyasbham1-7775s-projects.vercel.app'
     ],
     credentials: true,
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
+
+
+
+
 
 
 //config
